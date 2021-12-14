@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 14, 2021 at 09:48 PM
+-- Generation Time: Dec 14, 2021 at 10:29 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.26
 
@@ -212,7 +212,20 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`id_mahasiswa`, `nama`, `nim`, `email`, `jenis_kelamin`, `kelas_id`) VALUES
-(1, 'Yudi Hadianto', '19060006', 'yudihadiyanto5@gmail.com', 'L', 1);
+(1, 'Yudi Hadianto', '19060006', 'yudihadiyanto5@gmail.com', 'L', 1),
+(2, 'Wawan Kardiwan', '19060009', 'wawanjardiwan@gmail.com', 'L', 1),
+(3, 'Dede Lena Suryani', '19060013', 'dedelenasuryani@gmail.com', 'P', 1),
+(4, 'Dikri Rahmatillah', '19060015', 'dikrirahmatillah@gmail.com', 'L', 1),
+(5, 'Warham Nurdin', '19060017', 'warhamnurdin@gmail.com', 'L', 1),
+(6, 'Lavinda Aesha', '19060022', 'lavindaaesha@gmail.com', 'P', 1),
+(7, 'A Rahman Setia Nugraha', '19060025', 'arahmansetianugraha@gmail.com', 'L', 1),
+(8, 'Djody Maulana Ari Wibowo', '19060031', 'djodymaulanaariwibowo@gmail.com', 'L', 1),
+(9, 'Silmi Muhammad Maulana Ridwan', '19060035', 'silmimuhamadmaulanaridwan@gmail.com', 'L', 1),
+(10, 'Herdiana', '19060037', 'herdiana@gmail.com', 'L', 1),
+(11, 'Digo Adries', '19060038', 'digoadries@gmail.com', 'L', 1),
+(12, 'Solikul Rohim', '19060040', 'solikulrohim@gmail.com', 'L', 1),
+(13, 'Ikhsan Firdaus Surya', '19060042', 'ikhsanfirdaussurya@gmail.com', 'L', 1),
+(14, 'Risman Maulana', '19060043', 'rismanmaulana@gmail.com', 'L', 1);
 
 -- --------------------------------------------------------
 
@@ -335,9 +348,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `email`, `activation_selector`, `activation_code`, `forgotten_password_selector`, `forgotten_password_code`, `forgotten_password_time`, `remember_selector`, `remember_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`) VALUES
-(1, '127.0.0.1', 'yudihadianto', '$2y$12$tGY.AtcyXrh7WmccdbT1rOuKEcTsKH6sIUmDr0ore1yN4LnKTTtuu', 'yudihadiyanto7@gmail.com', NULL, '', NULL, NULL, NULL, NULL, NULL, 1268889823, 1639514403, 1, 'Yudi', 'Hadianto', 'ADMIN', '0'),
+(1, '127.0.0.1', 'yudihadianto', '$2y$12$tGY.AtcyXrh7WmccdbT1rOuKEcTsKH6sIUmDr0ore1yN4LnKTTtuu', 'yudihadiyanto7@gmail.com', NULL, '', NULL, NULL, NULL, NULL, NULL, 1268889823, 1639517017, 1, 'Yudi', 'Hadianto', 'ADMIN', '0'),
 (9, '::1', '19060006', '$2y$10$b5OO0AkUSQ1ej3uatNO8ne0RkPcsXowMyVr9RvaYQvGnKXiHpRCTq', 'yudihadiyanto5@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639513727, 1639514803, 1, 'Yudi', 'Hadianto', NULL, NULL),
-(10, '::1', '87654321', '$2y$10$UmS6OgLXQAXpcmwfeuY4hOqFlhQ34kYbiA2iqkIVzXZT4UdKfX0KS', 'rudihermawan@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639514485, 1639514603, 1, 'Rudi', 'ST', NULL, NULL);
+(10, '::1', '87654321', '$2y$10$UmS6OgLXQAXpcmwfeuY4hOqFlhQ34kYbiA2iqkIVzXZT4UdKfX0KS', 'rudihermawan@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639514485, 1639516688, 1, 'Rudi', 'ST', NULL, NULL),
+(11, '::1', '19060009', '$2y$10$qg/ByvcF6cllKzHb7rblZuR7VM/77YxXCH52PREwA.N3yO2HIxtgK', 'wawanjardiwan@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639516298, NULL, 1, 'Wawan', 'Kardiwan', NULL, NULL),
+(12, '::1', '19060013', '$2y$10$06aqP7xKR4TLbbQ4iEv3g.lTUykZewrpeotwNKa0N8ePODj1iN1r6', 'dedelenasuryani@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639516301, 1639516646, 1, 'Dede', 'Suryani', NULL, NULL),
+(13, '::1', '19060015', '$2y$10$ExfJKOHj4eBez5ZdcAZ9QOVNoaT9J7uyFnZ7Vl0wRlm5G/ngW7AQa', 'dikrirahmatillah@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639516303, NULL, 1, 'Dikri', 'Rahmatillah', NULL, NULL),
+(14, '::1', '19060017', '$2y$10$/Tw9NJ/QCQlpuIoSjrKaWePM4a97VN2mjpzNBVUkBhqUlnLTQhu6a', 'warhamnurdin@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639516305, NULL, 1, 'Warham', 'Nurdin', NULL, NULL),
+(15, '::1', '19060022', '$2y$10$o.Lbz/jOFCKyZDSu9enrlufXsfxYmP79likTUkNwOvKEzd5vkKC9.', 'lavindaaesha@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639516308, NULL, 1, 'Lavinda', 'Aesha', NULL, NULL),
+(16, '::1', '19060025', '$2y$10$0EefeAR9Pdb3J8W.qkfRpuO2kvxYV7tlUi2tx1pVZrvfWwXjOPj6e', 'arahmansetianugraha@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639516310, NULL, 1, 'A', 'Nugraha', NULL, NULL),
+(17, '::1', '19060031', '$2y$10$yx/Cti.kq26mFWK3OsYR/OTTuzj13jdbQ4C9yKxE5/pjHYkUsPKpq', 'djodymaulanaariwibowo@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639516312, NULL, 1, 'Djody', 'Wibowo', NULL, NULL),
+(18, '::1', '19060035', '$2y$10$fHAduc6floNF/xOh6Zje4O/ewQZdCRpFmQo2Xp281Mn1nm1xLWo7a', 'silmimuhamadmaulanaridwan@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639516315, NULL, 1, 'Silmi', 'Ridwan', NULL, NULL),
+(19, '::1', '19060037', '$2y$10$iZcrrWPCoOY77YKWORqlNOCUzg4z0MHZuLhc3hhbvMCU02y56FTNK', 'herdiana@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1639516317, NULL, 1, 'Herdiana', 'Herdiana', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -358,7 +380,16 @@ CREATE TABLE `users_groups` (
 INSERT INTO `users_groups` (`id`, `user_id`, `group_id`) VALUES
 (3, 1, 1),
 (11, 9, 3),
-(12, 10, 2);
+(12, 10, 2),
+(13, 11, 3),
+(14, 12, 3),
+(15, 13, 3),
+(16, 14, 3),
+(17, 15, 3),
+(18, 16, 3),
+(19, 17, 3),
+(20, 18, 3),
+(21, 19, 3);
 
 --
 -- Indexes for dumped tables
@@ -528,7 +559,7 @@ ALTER TABLE `login_attempts`
 -- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id_mahasiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_mahasiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `matkul`
@@ -552,13 +583,13 @@ ALTER TABLE `tb_soal`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `users_groups`
 --
 ALTER TABLE `users_groups`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- Constraints for dumped tables
